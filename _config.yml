@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ZHF
+title: ZHF's Blog
 subtitle:
-description:
+description: 记录自己的一些资料、体会
 keywords:
 author: ZHF
 language: zh-CN
@@ -81,4 +81,4 @@ deploy:
   type: git
   repo: https://github.com/hongfeizhang/hongfeizhang.github.io
   branch: master
-  message: blog_test
+  message: personal_blog

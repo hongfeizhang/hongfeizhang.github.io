@@ -4,7 +4,7 @@ date: 2019-05-08 17:15:32
 categories: 建站
 tags: Hexo|Next
 ---
-# GitHub Pages+Hexo+Next搭建个人网站(一)
+# 简单记录一下建站过程
 
 ### GitPages Hexo Next
 
@@ -49,7 +49,7 @@ $ npm --version
 npm install -g hexo-cli
 ```
 
-hexo安装后，执行。<folder>是需要创建的网站目录。
+hexo安装后，执行。\<folder\>是需要创建的网站目录。
 
 ```bash
 hexo init <folder>
