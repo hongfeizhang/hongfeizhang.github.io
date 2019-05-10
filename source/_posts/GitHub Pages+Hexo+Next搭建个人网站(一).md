@@ -2,7 +2,9 @@
 title: GitHub Pages+Hexo+Next搭建个人网站(一)
 date: 2019-05-08 17:15:32
 categories: 建站
-tags: Hexo|Next
+tags: 
+    - Hexo
+    - Next
 ---
 # 简单记录一下建站过程
 
@@ -14,6 +16,7 @@ tags: Hexo|Next
 
 [Next](https://github.com/theme-next/hexo-theme-next)是Hexo框架一个非常好用的主题。
 
+<!-- more -->
 ### 创建GitHub存储库
 
 登录GitHub，Create a new repository。
