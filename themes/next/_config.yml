@@ -128,7 +128,7 @@ exturl: true
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-#google_site_verification:
+google_site_verification: C8JHAW5MDJ_ksy8fvoM90iUMjUdtGP-S4dc6qIsYnjY
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
@@ -647,7 +647,7 @@ valine:
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80NDE3Ny8yMDcxMA==
 
 # Gitment
 # Introduction: https://github.com/imsun/gitment
@@ -753,9 +753,9 @@ needmoreshare2:
 #growingio_analytics: #your projectId
 
 # Google Analytics
-#google_analytics:
- tracking_id: UA-139869818-1
- localhost_ignored: true
+google_analytics:
+  tracking_id: UA-139869818-1
+  localhost_ignored: true
 
 # CNZZ count
 #cnzz_siteid:
@@ -803,13 +803,13 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: LAFYCnKNimSUP3yWLyad237p-gzGzoHsz
+  app_key: JhHwbL4WR4bGL3qpXx7t8CQI
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
+  security: false
   betterPerformance: false
 
 # Another tool to show number of visitors to each article.

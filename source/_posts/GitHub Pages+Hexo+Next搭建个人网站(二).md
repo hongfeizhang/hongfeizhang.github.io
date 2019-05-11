@@ -6,32 +6,6 @@ tags:
     - Hexo
     - Next
 ---
-
-
-### 自定义域名
-
-懒得备案，域名注册选择[godaddy](http://www.godaddy.com/)。
-
-注册、付款，域名到手。没有选择保护隐私服务（60），除了邮箱其他个人信息都随便填。
-
-进入我的域名，选择管理DNS。
-
-![](https://raw.githubusercontent.com/hongfeizhang/Image-Hosting/master/20190509232614.png)
-
-填上GitHub的地址和自己的仓库地址。
-
-![](https://raw.githubusercontent.com/hongfeizhang/Image-Hosting/master/20190509232828.png)
-
-在GitHub对应的项目仓库，进行设置。
-
-![](https://raw.githubusercontent.com/hongfeizhang/Image-Hosting/master/20190509233136.png)
-
-![](https://raw.githubusercontent.com/hongfeizhang/Image-Hosting/master/20190509233217.png)
-
-稍等几分钟，大功告成。
-
-![](https://raw.githubusercontent.com/hongfeizhang/Image-Hosting/master/20190509233350.png)
-
 ### [使用Next主题](https://theme-next.iissnan.com/)
 
 > 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。
@@ -51,7 +25,7 @@ language: zh-CN
 
 theme: next
 ```
-
+<!-- more -->
 #### 选择 Scheme，编辑主题配置文件
 
 ```yaml
@@ -124,5 +98,30 @@ links:
   Title: http://example.com/
 ```
 
-#### 评论系统，选择
+#### 评论系统，不能被墙，不要备案，选择来必力
+```yaml
+livere_uid: #your livere_uid
+```
 
+#### [阅读次数统计](https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud)
+
+注册leancloud，登陆，新建应用
+![](https://raw.githubusercontent.com/hongfeizhang/Image-Hosting/master/20190511154316.png)
+
+在存储中创建Counter表
+![](https://raw.githubusercontent.com/hongfeizhang/Image-Hosting/master/20190511154405.png)
+
+在应用key中找到相应的app_id和app_key
+![](https://raw.githubusercontent.com/hongfeizhang/Image-Hosting/master/20190511154715.png)
+
+```yaml
+leancloud_visitors:
+  enable: true
+  app_id: 
+  app_key: 
+  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  # If you don't care about security in leancloud counter and just want to use it directly
+  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
+  security: true
+  betterPerformance: false
+```
