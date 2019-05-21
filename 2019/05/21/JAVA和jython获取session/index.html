@@ -101,18 +101,18 @@
 
 
 
-  <meta name="description" content="java获取sessionSpring MVC中12HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();HttpSession session = request.getSession(); 获取Session所有值123">
+  <meta name="description" content="java获取sessionSpring MVC中12HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();HttpSession session = request.getSession();">
 <meta name="keywords" content="JAVA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JAVA和jython获取session">
 <meta property="og:url" content="http://hongfeizhang.github.io/2019/05/21/JAVA和jython获取session/index.html">
 <meta property="og:site_name" content="ZHF&#39;s Blog">
-<meta property="og:description" content="java获取sessionSpring MVC中12HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();HttpSession session = request.getSession(); 获取Session所有值123">
+<meta property="og:description" content="java获取sessionSpring MVC中12HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();HttpSession session = request.getSession();">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-21T00:54:56.115Z">
+<meta property="og:updated_time" content="2019-05-21T00:57:11.509Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JAVA和jython获取session">
-<meta name="twitter:description" content="java获取sessionSpring MVC中12HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();HttpSession session = request.getSession(); 获取Session所有值123">
+<meta name="twitter:description" content="java获取sessionSpring MVC中12HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();HttpSession session = request.getSession();">
 
 
 
@@ -383,7 +383,7 @@
                 
               
 
-              <time title="创建时间：2019-05-21 08:42:54 / 修改时间：08:54:56" itemprop="dateCreated datePublished" datetime="2019-05-21T08:42:54+08:00">2019-05-21</time>
+              <time title="创建时间：2019-05-21 08:42:54 / 修改时间：08:57:11" itemprop="dateCreated datePublished" datetime="2019-05-21T08:42:54+08:00">2019-05-21</time>
             
 
             
@@ -452,6 +452,7 @@
 
       
         <h3 id="java获取session"><a href="#java获取session" class="headerlink" title="java获取session"></a>java获取session</h3><h4 id="Spring-MVC中"><a href="#Spring-MVC中" class="headerlink" title="Spring MVC中"></a>Spring MVC中</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();</span><br><span class="line">HttpSession session = request.getSession();</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h4 id="获取Session所有值"><a href="#获取Session所有值" class="headerlink" title="获取Session所有值"></a>获取Session所有值</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">HttpSession session = request.getSession();    </span><br><span class="line"><span class="comment">// 获取session中所有的键值  </span></span><br><span class="line">Enumeration&lt;String&gt; attrs = session.getAttributeNames();  </span><br><span class="line"><span class="keyword">while</span>(attrs.hasMoreElements())&#123;</span><br><span class="line">    String name = attrs.nextElement().toString();</span><br><span class="line">    Object value = session.getAttribute(name);</span><br><span class="line">    System.out.println(name+<span class="string">":"</span>+value);</span><br></pre></td></tr></table></figure>
 <h3 id="jython中也可以用"><a href="#jython中也可以用" class="headerlink" title="jython中也可以用"></a>jython中也可以用</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> org.springframeword.web.context.request <span class="keyword">import</span> RequestContextHolder</span><br><span class="line"></span><br><span class="line">request=RequestContextHolder.getRequestAttributes().getRequest()</span><br><span class="line">session=request.getSession()</span><br><span class="line">print(session)</span><br></pre></td></tr></table></figure>
       
